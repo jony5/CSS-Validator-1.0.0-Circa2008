@@ -5,7 +5,7 @@
 
 //
 // USE THIS TO CONSTRUCT ANONYMOUS OBJECTS
-class Object {
+class Object_generic {
 	function __construct( ) {
 		$n = func_num_args( ) ;
 		for ( $i = 0 ; $i < $n ; $i += 2 ) {
@@ -14,7 +14,7 @@ class Object {
 	}
 }
 
-$mailClientProfile = new Object(
+$mailClientProfile = new Object_generic(
 	'clientname',array("Yahoo (old)","Yahoo (new)","Gmail (old)","Gmail (new)","Live Mail","Hotmail","AOL Web",".Mac Web","Outlook 2003","Outlook 2007","Windows Mail","Mac Mail","Entourage 2004","Entourage 2008","Thunderbird 1.5","Thunderbird 2","AOL 9","AOL 10","AOL Desktop for Mac","Notes 6","Eudora"),
 	'Outlook2003', array("y","y","y","y","y","y","y","y","y","y","y","y","y","y","y","y","y","y","y","y","y","y","y","y","y","y","y","y","y","y","n","y","y","y","y","y","y","y","y","y","y","y","y","n","y","n","y","n","n","n","n","n","n","n","n","n","n","n","n","n","n","n","n","n","n","n","n","n","n","n","n","n","n","n","n","n","n","n","n","n","n","n","y","y"),
 	'Outlook2007', array("y","y","y","y","y","y","y","y","y","y","n","y","y","y","y","y","y","y","y","y","n","n","n","n","n","n","n","n","n","n","y","n","n","n","n","n","n","y","y","n","n","n","n","n","n","n","n","n","n","n","n","n","n","n","n","n","n","n","n","n","n","n","n","n","n","n","n","n","n","n","n","n","n","n","n","n","n","n","n","n","n","n","y","y"),
@@ -41,10 +41,10 @@ $mailClientProfile = new Object(
  //
  //	style(0) and link(1) are for instances in header
  //	style(81) and link(82) are for instances in body
-$targetPatterns = new Object(
+$targetPatterns = new Object_generic(
 	'pattern', array("<style","<style", "color:", "font-size:", "font-style:", "font-weight:", "text-align:", "text-decoration:", "background-color:", "border:", "display:", "font-family:", "font-variant:", "letter-spacing:", "line-height:", "padding:", "table-layout:", "text-indent:", "text-transform:", "border-collapse:", "clear:", "direction:", "float:", "vertical-align:", "width:", "word-spacing:", "height:",  "list-style-type:","overflow:","visibility:",  "white-space:",  "background-image:","background-repeat:",  "clip:", "cursor:", "list-style-image:", "list-style-position:", "margin:", "z-index:", "left:", "right:", "top:", "background-position:", "border-spacing:", "bottom:", "empty-cells:", "position:", "caption-side:", "opacity:","<ul", "<li", "<p", "<big", "<center", "<dd", "<dl", "<dt", "<em>", "<embed>",  "<form", "<h1", "<h2", "<h3",  "<h4", "<h5", "<h6", "<input>", "<ol>", "<option", "<select", "<button", "<label", "<fieldset",  "<script",  "<noscript", "<small>", "<th", "<tt", "<textarea","<object","<param","<tbody","<link","<link")) ;	
 
-$EMAIL_SCORE = new Object('s_count', 0) ;	
+$EMAIL_SCORE = new Object_generic('s_count', 0) ;
 
 // FUNCTIONS TO RETURN SPECIFIC VALUES
 function strstrbi($haystack, $needle, $before_needle, $include_needle, $case_sensitive) {
