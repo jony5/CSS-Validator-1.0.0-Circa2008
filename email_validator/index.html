@@ -29,7 +29,7 @@
 				<form id="h_form" name="h_form" action="./results.php" method="post" onsubmit="if(processHTML()){}else{return false}">
 				<div id="h_textarea">
 					<div class="textarea">
-						<textarea id="H" name="H" cols="50" rows="8" onclick="javascript:this.focus();this.select();" >Paste HTML here.</textarea>
+						<textarea id="H" name="H" cols="50" rows="8" placeholder="Paste HTML here (26 char min)." style="padding-top:5px; padding-left: 5px;" onclick="javascript:this.focus();this.select();" ></textarea>
 					</div>
 				</div>
 				<div class="cb"></div>
@@ -56,14 +56,14 @@
 	</div>
 
 </div>
-<script type="text/javascript">
-var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-</script>
-<script type="text/javascript">
-var pageTracker = _gat._getTracker("UA-2181418-7");
-pageTracker._initData();
-pageTracker._trackPageview();
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-G28EC03WLZ"></script>
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+
+	gtag('config', 'G-G28EC03WLZ');
 </script>
 </body>
 </html>
