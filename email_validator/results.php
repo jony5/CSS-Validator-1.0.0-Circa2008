@@ -3181,15 +3181,6 @@ $flag_match_MacWeb
 		</div>
 	</div>
 
-</div>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-G28EC03WLZ"></script>
-<script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-G28EC03WLZ');
-</script>
+</div
 </body>
 </html>
